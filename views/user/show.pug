@@ -1,0 +1,13 @@
+extends ../layout.pug
+
+block style
+    link(rel="stylesheet", href="/css/materia.min.css")
+
+block content
+    .row.my-4
+        .col-md-12
+            a.btn.btn-link(href="/users")
+    .row
+        .col-md-12
+            h1 #{ user.name }
+            em #{ user.email }
